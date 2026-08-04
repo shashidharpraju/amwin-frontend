@@ -1,0 +1,128 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/products/[modelNumber]",
+      "regex": "^/products/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPmodelNumber": "nxtPmodelNumber"
+      },
+      "namedRegex": "^/products/(?<nxtPmodelNumber>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/careers",
+      "regex": "^/careers(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/careers(?:/)?$"
+    },
+    {
+      "page": "/contact",
+      "regex": "^/contact(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/contact(?:/)?$"
+    },
+    {
+      "page": "/favicon.ico",
+      "regex": "^/favicon\\.ico(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/favicon\\.ico(?:/)?$"
+    },
+    {
+      "page": "/products",
+      "regex": "^/products(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/products(?:/)?$"
+    },
+    {
+      "page": "/services/consulting",
+      "regex": "^/services/consulting(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/consulting(?:/)?$"
+    },
+    {
+      "page": "/services/HPC",
+      "regex": "^/services/HPC(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/HPC(?:/)?$"
+    },
+    {
+      "page": "/services/security",
+      "regex": "^/services/security(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/security(?:/)?$"
+    },
+    {
+      "page": "/services/servers",
+      "regex": "^/services/servers(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/servers(?:/)?$"
+    },
+    {
+      "page": "/services/storage",
+      "regex": "^/services/storage(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/storage(?:/)?$"
+    },
+    {
+      "page": "/services/virtualization",
+      "regex": "^/services/virtualization(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/services/virtualization(?:/)?$"
+    },
+    {
+      "page": "/team",
+      "regex": "^/team(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/team(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments"
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/favicon.ico/route": "/favicon.ico",
+  "/careers/page": "/careers",
+  "/page": "/",
+  "/services/HPC/page": "/services/HPC",
+  "/services/security/page": "/services/security",
+  "/contact/page": "/contact",
+  "/services/consulting/page": "/services/consulting",
+  "/services/storage/page": "/services/storage",
+  "/services/servers/page": "/services/servers",
+  "/team/page": "/team",
+  "/services/virtualization/page": "/services/virtualization",
+  "/products/[modelNumber]/page": "/products/[modelNumber]",
+  "/products/page": "/products"
+}
